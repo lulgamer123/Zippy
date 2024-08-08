@@ -1,0 +1,30 @@
+body {
+    padding-top: 60px;
+}
+
+.table-responsive {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.d-flex{
+    gap: 20px;
+}
+
+@media (max-width: 320px) {
+    nav h2{
+       display: none;
+    }
+
+    #btns{
+        margin-bottom: 10px;
+    }
+
+    .d-flex{
+        gap: 20px;
+        flex-direction: column;
+    }
+}

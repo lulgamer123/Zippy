@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CDN ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--FINAL CDN ICONS-->
+
+    <link rel="shortcut icon" type="imagex/png" href="img/logoZippy.png"> <!--LOGO DA ZIPPY-->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--FINAL DA LINKAGEM DO CSS -->
+
+    <!--INÍCIO DO INDEX-->
+    <title>Bem vindo | Zippy</title>
+</head>
+
+<body>
+    <!--INÍCIO DO HEADER-->
+    <header id="header" class="">
+        <div id="logo" class="logo">    
+            <img src="img/logoZippy.png" alt=""> <!--LOGO-->
+            <a href="index.html"><p>Zippy</p></a>
+        </div>
+
+        <!--INÍCIO DO NAV-->
+        <nav id="nav">
+            <ul id="ul" class="">
+                <li><a href="#comoFunciona">Como Funciona</a></li><!--VAI APENAS DAR UM SCROLL ATÉ A RESPECTIVA ÁREA-->
+                <li><a href="#quemSomos">Quem Somos</a></li>      <!--VAI APENAS DAR UM SCROLL ATÉ A RESPECTIVA ÁREA-->
+                <li><a href="#FAQ">FAQ</a></li>                   <!--VAI APENAS DAR UM SCROLL ATÉ A RESPECTIVA ÁREA-->
+                <li><a id="btn-download" href="#"><i class="fa-brands fa-google-play"></i> Baixe o App</a></li><!--AINDA NÃO ESTÁ PRONTO-->
+                <li><a id="btn-download" href="pages/autenticacao/login.php"><i class="fa-solid fa-user"></i> Login </a></li> <!--LINK PARA LOGIN-->
+            </ul>
+        </nav>
+        <div id="btn-hamburguer" class="btn-hamburguer" onclick="navResponsive()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!--FINAL DO NAV-->
+
+    </header>
+    <!--FINAL DO HEADER-->
+
+    <!------------------->
+
+    <!--INÍCIO DO CONTAINER PRINCIPAL -->
+
+    <!--FRASE INICIAL-->
+    <div class="container">
+        <div class="texto">
+            <h1>Compre de qualquer lugar <br> do MUNDO
+                com poucos CLIQUES </h1>
+            <p id="textoOpaco">A Zippy conecta compradores e viajantes ao redor do mundo que procuram conseguir
+                os melhores preços e prazos de entrega!</p>
+            <a class="btn-index" href="#comoFunciona">Veja como funciona!</a> <!--BOTÃO PARA IR ABAIXO-->
+        </div>
+    <!--FIM DA FRASE INICIAL-->
+
+    <!--ÁREA DA IMAGEM FLUTUANTE-->
+        <div class="imagem">
+            <img class="move-img" src="img/aviao-main.png" alt="aviao">
+        </div>
+    </div>
+    <!--FINAL DA IMAGEM-->
+
+    <!------------------->
+
+    <!--INÍCIO DA SECTION - PEDIDOS -->
+    <section id="pedidos">
+        <div id="textoPedidos">
+            <h2>Alguns dos pedidos feitos conosco</h2>
+            <p id="textoOpaco">Com essas compras eles garantiram rapidez, economia e segurança!</p>
+        </div>
+
+        <!--CARDS DOS CLIENTES QUE COMPRARAM-->
+        <div class="cards">
+            <div class="card-item">
+                <img class="img-produto" src="img/produtos/airPods.png" alt=""> <!--IMAGEM DO PRODUTO-->
+                <div class="info-cliente"> <!--INFO CLIENTE-->
+                    <div class="remetente">
+                        <img src="img/clientes/Ella.png" alt="" class="foto-perfil"> <!--IMAGEM DO CLIENTE-->
+                        <p class="nome-remetente">Ella Freya</p>
+                        <p class="local">Tokyo - JPN</p>
+                        <a href="#" class="btn-card">Ganhou ¥15,199!</a>
+                    </div>
+                    <img src="img/aviaozinho-card.png" alt=""> <!--IMAGEM DO AVIÃO-->
+                    <div class="remetente">
+                        <img src="img/clientes/Emma.png" alt="" class="foto-perfil2"> <!--IMAGEM DO CLIENTE-->
+                        <p class="nome-remetente">Emma Bernache</p>
+                        <p class="local">Quebec - CA</p>
+                        <a href="#" class="btn-card">Economizou $100!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--SEGUNDO CARD DE CLIENTE-->
+            <div class="card-item">
+                <img class="img-produto" src="img/produtos/iphone.png" alt=""> <!--IMAGEM DO PRODUTO-->
+                <div class="info-cliente"> <!--INFO CLIENTE-->
+                    <div class="remetente">
+                        <img src="img/clientes/Ada.png" alt="" class="foto-perfil"> <!--IMAGEM DO CLIENTE-->
+                        <p class="nome-remetente">Ada Wong</p>
+                        <p class="local">Shangai - CN</p>
+                        <a href="#" class="btn-card">Ganhou ¥391!</a>
+                    </div>
+                    <img src="img/aviaozinho-card.png" alt=""> <!--IMAGEM DO AVIÃO-->
+                    <div class="remetente">
+                        <img src="img/clientes/Leon.png" alt="" class="foto-perfil2"> <!--IMAGEM DO CLIENTE-->
+                        <p class="nome-remetente">Leon Kennedy</p>
+                        <p class="local">Chicago - USA</p>
+                        <a href="#" class="btn-card">Economizou $150!</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--TERCEIRO CARD DE CLIENTE-->
+            <div class="card-item">
+                <img class="img-produto" src="img/produtos/PS5.png" alt=""> <!--IMAGEM DO PRODUTO-->
+                <div class="info-cliente"> <!--INFO CLIENTE-->
+                    <div class="remetente">
+                        <img src="img/clientes/James.png" alt="" class="foto-perfil"> <!--IMAGEM DO CLIENTE-->
+                        <p class="nome-remetente">James Sunderland</p>
+                        <p class="local">Silent Hill - USA</p>
+                        <a href="#" class="btn-card">Ganhou $100!</a>
+                    </div>
+                    <img src="img/aviaozinho-card.png" alt=""> <!--IMAGEM DO AVIÃO-->
+                    <div class="remetente">
+                        <img src="img/clientes/Niko.png" alt="" class="foto-perfil2"> <!--IMAGEM DO CLIENTE-->
+                        <p class="nome-remetente">Niko Bellic</p>
+                        <p class="local">Belgrado - RS</p>
+                        <a href="#" class="btn-card">Economizou $250!</a>
+                    </div>
+                </div>
+            </div>
+            <!--FINAL DOS TRÊS CARDS-->
+        </div>
+    </section>
+    <!--FIM DA SECTION - PEDIDOS-->
+
+    <!------------------->
+
+    <!--INÍCIO DA SECTION - COMO FUNCIONA  -->
+    <section id="comoFunciona">
+        <div class="textoCabecalho">
+            <h2>Veja como funciona:</h2>
+
+            <div class="botoes"> <!--BOTÕES PARA ESCOLHER VIAJANTE/CLIENTE-->
+                <p href="#" id="compradoresBtn">Para Compradores</p>
+                <span id="separador"></span>
+                <p href="#" id="viajantesBtn">Para Viajantes</p>
+            </div>
+            <!--FINAL DO BOTÃO-->
+
+        </div>
+
+        <!-- ABA DE COMPRADORES -->
+        <div id="compradores" class="parent">
+
+            <!--BLOCO 1-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>01 -</h1>
+                    <h3>Crie seu pedido.</h3>
+                </div>
+                <p>É possível comprar qualquer produto no mundo. Comece fazendo um pedido para o seu item
+                    desejado, fornecendo informações essenciais como o local de compra sugerido para o viajante e o
+                    preço do produto.</p>
+            </div>
+            <!--FINAL BLOCO 1-->
+
+            <div class="img">
+                <img src="img/layout/criando02.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/viajante.jpg" alt="">
+            </div>
+
+            <!--BLOCO 2-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>02 -</h1>
+                    <h3>Um viajante aceitar seu pedido.</h3>
+                </div>
+                <p>Depois de publicar o seu pedido, a gente compartilha para os viajantes. Aqueles que estão indo
+                    para sua área mandam propostas para entregar seu produto.</p>
+            </div>
+            <!--FINAL BLOCO 2-->
+
+            <!--BLOCO 3-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>03 -</h1>
+                    <h3>Entre em contato com o viajante.</h3>
+                </div>
+                <p>Quando entrar em contato com o viajante, vocês irão conversar sobre valores e também um valor específico pela entrega. Durante a entrega, caso haja problemas com taxas alfandegárias iremos calculá-las para você. E se o viajante não entregar seu pedido ou sumir, iremos te reembolsar seu pagamento.</p>
+            </div>
+            <!--FINAL BLOCO 3-->
+
+            <div class="img">
+                <img src="img/layout/contato.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/encontro.jpg" alt="">
+            </div>
+
+            <!--BLOCO 4-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>04 -</h1>
+                    <h3>Encontre o viajante com o seu pedido.</h3>
+                </div>
+                <p>Marque o horário em um local público para encontrar o viajante. Quando você receber o item, confirme
+                    o recebimento para que o pagamento dele seja enviado.</p>
+            </div>
+            <!--FINAL BLOCO 4-->
+
+        </div>
+        <!--FIM ABA COMPRADORES-->
+
+        <!------------------->
+
+        <!-- ABA DE VIAJANTES -->
+        <div id="viajantes" class="parent">
+
+            <!--BLOCO 1-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>01 -</h1>
+                    <h3>Escolha algum pedido para entregar</h3>
+                </div>
+                <p>Pesquise pedidos com base no seu próximo destino. Faça uma oferta e defina sua recompensa de viajante com o comprador.
+                </p>
+            </div>
+            <!--FINAL BLOCO 1-->
+
+            <div class="img">
+                <img src="img/layout/comprador.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/confirmar.jpg" alt="">
+            </div>
+
+            <!--BLOCO 2-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>02 -</h1>
+                    <h3>Confirme todos os detalhes da entrega.</h3>
+                </div>
+                <p>Use o chat para confirmar os detalhes do pedido com o seu comprador, como o tamanho e a cor do
+                    produto, também perguntar se ele tem outros pedidos que gostaria de receber.<br>E caso haja problemas com alfândega contate nossa empresa.</p>
+            </div>
+            <!--FINAL BLOCO 2-->
+
+            <!--BLOCO 3-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>03 -</h1>
+                    <h3>Compre o produto.</h3>
+                </div>
+                <p>Dessa forma, você sabe exatamente o que está trazendo. Após a entrega, você será reembolsado pelo
+                    preço do item junto com o pagamento da sua recompensa.
+                </p>
+            </div>
+            <!--FINAL BLOCO 3-->
+
+            <div class="img">
+                <img src="img/layout/comprando02.jpg" alt="">
+            </div>
+
+            <div class="img">
+                <img src="img/layout/entrega02.jpg" alt="">
+            </div>
+
+            <!--BLOCO 4-->
+            <div class="texto">
+                <div class="cabecalho">
+                    <h1>04 -</h1>
+                    <h3>Encontre o comprador com o seu pedido.</h3>
+                </div>
+                <p>Marque o horário em um local público para encontrar o viajante. Quando você receber o item, confirme
+                    a entrega para que o seu pagamento seja enviado</p>
+            </div>
+            <!--FINAL BLOCO 4-->
+
+        </div>
+        <!--FINAL ABA VIAJANTES-->
+
+    </section>
+    <!--FINAL DA SECTION - COMO FUNCIONA -->
+
+    <!------------------->
+
+    <!--INÍCIO DA SECTION - QUEM SOMOS-->
+
+    <!--CABEÇALHO-->
+    <section id="quemSomos">
+        <div class="texto">
+            <h1>Quem somos nós?</h1>
+            <p>Zippy conectando desejos ao redor do mundo, um pedido de cada vez!</p>
+        </div>
+
+        <!--TEXTO DO LADO ESQUERDO-->
+        <div class="cardsSomos">
+            <div class="cardSomos">
+                <span id="linha"></span>
+                <img src="img/foguete.png" alt="">
+                <h1>Uma empresa sonhadora.</h1>
+                <p>Na Etec Lauro Gomes em São Bernardo do Campo, seis amigos compartilharam uma ideia inovadora. Movidos pela vontade de criar algo único, fundaram sua própria empresa, que como conhecemos como Zippy! Onde cada um contribuiu com sua expertise única. Juntos, criaram e programaram todos juntos. Após o seu sucesso, a Zippy se encontra hoje com sua sede em Quebec no Canadá.</p>
+                <span id="linha"></span>
+            </div>
+        <!--FIM ESQUERDO-->
+
+        <!--TEXTO DO MEIO-->
+            <div class="cardSomos">
+                <span id="linha"></span>
+                <img src="img/lampada.png" alt="">
+                <h1>Equipe dedicada e esforçada.</h1>
+                <p>Na Zippy, os funcionários são mais do que apenas colaboradores; são os pilares do nosso sucesso. Com comprometimento exemplar, eles abraçam desafios com criatividade e determinação. Sua dedicação incansável e trabalho em equipe são os alicerces que impulsionam nossa empresa rumo ao crescimento contínuo. Onde, valorizamos e reconhecemos o talento excepcional dos membros da equipe.</p>
+                <span id="linha"></span>
+            </div>
+        <!--FIM MEIO-->
+
+        <!--TEXTO DO LADO DIREITO-->
+            <div class="cardSomos">
+                <span id="linha"></span>
+                <img src="img/Group.png" alt="">
+                <h1>Facilitar o acesso aos produtos.</h1>
+                <p>Buscamos simplificar o acesso aos nossos produtos em todo o mundo. Através de uma rede global de distribuição em áreas estratégicas. Estamos tornando qualquer produto acessível a todos, onde quer que estejam. Nossa missão é garantir que cada cliente tenha facilidade em encontrar e adquirir o produto que querem, proporcionando uma experiência de compra conveniente e satisfatória.</p>
+                <span id="linha"></span>
+            </div>
+        <!--FIM DIREITO-->
+        </div>
+    </section>
+    <!--FINAL DA SECTION - QUEM SOMOS-->
+
+    <!------------------->
+
+    <!--INÍCIO SECTION - FAQ-->
+
+    <!--CABEÇALHO-->
+    <section id="FAQ">
+        <div class="texto">
+            <h1>Perguntas Frequentes</h1>
+            <p>Tem alguma dúvida? Veja se ela já não foi respondida pela nossa equipe!</p>
+        </div>
+
+        <!--BLOCO ACORDEÃO-->
+        <div id="perguntas">
+
+            <!--ACORDEÃO 1-->
+            <button class="accordion">E se não entregarem meu pedido?</button>
+            <div class="panel">
+                <p>Caso não haja a entrega do seu pedido, primeiro entraremos em contato com o viajante, caso não haja nehuma possibilidade de entrega, reembolsaremos o valor que você pagou e cancelaremos o processo de entrega.</p>
+            </div>
+
+            <!--ACORDEÃO 2-->
+            <button class="accordion">E se não confirmarem o recebimento?</button>
+            <div class="panel">
+                <p>Caso o comprador não confirme o recebimento, nós entraremos em contato com ele, porém, antes disso, você terá que ter confirmado a entrega e com a foto do produto entregue. Então, poderemos ver a situação e você receberá seu pagamento.</p>
+            </div>
+
+
+            <!--ACORDEÃO 3-->
+            <button class="accordion">Como posso me cadastrar como viajante?</button>
+            <div class="panel">
+                <p>Caso queira se cadastrar como viajante, na própria área de login em "Cadastro", tem a opção de se cadastrar como viajante, prossiga os passos descritos na tela e então você será um viajante.</p>
+            </div>
+
+            <!--ACORDEÃO 4-->
+            <button class="accordion">Como posso denunciar um usuário?</button>
+            <div class="panel">
+                <p>Caso queira denunciar um usuário, na página inicial, terá um texto escrito "Suporte", após clicar lá, terá a opção de "Denunciar usuário", siga os passsos que são pedidos e conseguirá denunciar um usuário.</p>
+            </div>
+
+            <!--ACORDEÃO 5-->
+            <button class="accordion">E se a alfândega impedir a chegada do meu produto?</button>
+            <div class="panel">
+                <p>Caso haja esse problema, o viajante entrará em contato conosco e então entraremos em contato com você, se pode tirar o produto da caixa ou não e etc. Se mesmo assim não for possível o envio, o viajante nos dirá o valor e enviaremos essa informação para você para que o pagamento seja feito.</p>
+            </div>
+
+            <!--ACORDEÃO 6-->
+            <button class="accordion">E se o viajante não puder entregar meu produto mais?</button>
+            <div class="panel">
+                <p>Caso o viajante não puder entregar o seu produto, ele entrará em contato conosco e após isso entraremos em contato com você para que receba seu reembolso.</p>
+            </div>
+        </div>
+        <!--FIM BLOCO ACORDEÃO-->
+    </section>
+    <!--FINAL DA SECTION - FAQ-->
+
+    <!------------------->
+
+    <!--INÍCIO DA SECTION - MÍDIA-->
+
+    <!--CABEÇALHO-->
+    <section id="midia">
+        <div class="texto">
+            <h1>O que a mídia fala do nosso serviço? Veja!</h1>
+        </div>
+
+        <!--CAIXA COM AS NOTÍCIAS-->
+        <div class="container2">
+            <div class="grid">
+
+                <!--NOTÍCIA 1-->
+                <div class="item"><a target="_blank"
+                        href="https://consumidormoderno.com.br/2023/04/26/viajar-compras-grabr/" id="btn-ver">Ver
+                        Mais!</a>
+                </div>
+
+                <!--NOTÍCIA 2-->
+                <div class="item"><a target="_blank"
+                        href="https://www.uol.com.br/tilt/noticias/redacao/2022/09/27/vantagens-riscos-importacao-iphone-do-exterior.htm"
+                        id="btn-ver">Ver Mais!</a>
+                </div>
+
+                <!--NOTÍCIA 3-->
+                <div class="item"><a target="_blank"
+                        href="https://www.estadao.com.br/economia/econoweek/grabr-um-app-que-deixa-mais-barato-os-seus-importados/"
+                        id="btn-ver">Ver Mais!</a>
+                </div>
+
+                <!--NOTÍCIA 4-->
+                <div class="item"><a target="_blank"
+                        href="https://www.infomoney.com.br/consumo/isencao-para-as-compras-de-ate-us-50-deve-acabar-em-2024-entenda/#:~:text=O%20governo%20e%20a%20Receita,produtos%20importados%20sem%20pagar%20imposto."
+                        id="btn-ver">Ver Mais!</a>
+                </div>
+            </div>
+        </div>
+        <!--FIM CAIXA DE NOTÍCIAS-->
+    </section>
+    <!--FINAL DA SECTION - MÍDIA-->
+
+    <!------------------->
+
+    <!--INÍCIO DO FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <img src="img/logoZippy.png" alt=""> <!--LOGO-->
+                <p>Zippy</p>
+            </div>
+
+            <!--CANTO COM AS REDES SOCIAIS-->
+            <div class="social-media">
+                <h2>Redes Sociais</h2>
+                <div class="social-icons">
+
+                    <!--LINKS QUE VÃO PARA A PÁGINA DA EMPRESA-->
+                    <a href="https://www.instagram.com/zippyltda/" target="_blank"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61557704542956" target="_blank"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-tiktok" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+            <!--FIM CANTO DAS REDES SOCIAIS-->
+        </div>
+
+        <!--LINKS DO FOOTER-->
+        <ul class="footer-links">
+            <li><a href="#FAQ">FAQ</a></li> <!--VAI DAR SCROLL ATÉ A RESPECTIVA PARTE-->
+            <li><a href="#">Privacidade</a></li> <!--SEM LINK POR ENQUANTO-->
+            <li><a href="#quemSomos">Quem Somos</a></li> <!--VAI DAR SCROLL ATÉ A RESPECTIVA PARTE-->
+            <li><a href="#pedidos">Compras Conosco</a></li> <!--VAI DAR SCROLL ATÉ A RESPECTIVA PARTE-->
+        </ul>
+        <!--FIM LINKS FOOTER-->
+
+        <!--ÁREA TERMOS DE USO-->
+        <hr>
+        <div class="developer-info">
+            <div class="termos">
+                <a href="#">Termos de Uso</a>
+                <span>|</span>
+                <a href="#">Privacidade</a>
+              </div>
+           <p> Desenvolvido por Zippy | Todos os direitos reservados</p>
+        </div>
+        <!--FINAL DA ÁREA TERMOS DE USO-->
+    </footer>
+    <!--FINAL DO FOOTER-->
+
+    <!------------------->
+
+    <!--INÍCIO SCRIPTS-->
+    <script src="js/acordion.js"></script> <!--SCRIPT ACORDEÃO-->
+    <script src="js/switchDivs.js"></script> <!--SCRIPT DE TROCA DE DIVS (CLIENTE/VIAJANTE)-->
+    <script src="js/responsive.js"></script> <!--SCRIPT RESPONSIVO-->
+    <!--FIM SCRIPTS-->
+
+    <!------------------->
+
+</body>
+</html>
+<!--FIM INDEX-->

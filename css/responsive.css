@@ -1,0 +1,549 @@
+/*RESPONSIVIDADE PARA TABLET*/
+@media (max-width: 768px) {
+
+    /* HEADER - NAV E LOGO */
+    header .logo {
+        flex-direction: column;
+    }
+
+    header .logo img {
+        /* IMAGEM DA LOGO */
+        width: 50px;
+        height: 50px;
+    }
+
+    header nav ul {
+        gap: 1rem;
+    }
+
+    header nav ul li a {
+        font-size: 0.90rem;
+    }
+
+    /* FINAL HEADER - NAV E  LOGO */
+
+    /*/////////////////////////////*/
+
+    /* CONTAINER PRINCIPAL - TEXTOS, IMAGEM E BOTÃO */
+    div.container {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    div.container div.texto {
+        order: 2;
+        width: 90%;
+        align-items: center;
+    }
+
+    div.container div.texto h1 {
+        text-align: center;
+    }
+
+    div.container div.texto P#textoOpaco {
+        text-align: center;
+    }
+
+    div.container div.imagem {
+        order: 1;
+        width: 80%;
+    }
+
+    /* FINAL CONTAINER PRINCIPAL - TEXTOS, IMAGEM E BOTÃO */
+
+    /*/////////////////////////////*/
+
+    /* SECTION PEDIDOS E CARDS */
+    section#pedidos div.cards div.card-item {
+        max-width: 32%;
+    }
+
+    section#pedidos div.cards div.card-item div.info-cliente div.remetente p {
+        font-size: 0.7rem;
+    }
+
+    section#pedidos div.cards div.card-item div.info-cliente div.remetente a.btn-card {
+        font-size: 0.8rem;
+    }
+
+    /* FINAL SECTION PEDIDOS E CARDS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION - COMO FUNCIONA  */
+    .parent {
+        max-width: 95%;
+    }
+
+    /* FINAL SECTION COMO FUNCIONA */
+
+    /*/////////////////////////////*/
+
+    /* SECTION -  QUEM SOMOS */
+    section#quemSomos div.texto {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /*FINAL SECTION QUEM SOMOS */
+
+    /*/////////////////////////////*/
+
+    /* HOME - CRIAR PEDIDOS */
+    div.container-pedido {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    div.container-pedido .img-pedidos {
+       display: none;
+    }
+
+    li.pedido{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+   
+    
+    div#criarPedido{
+        flex-direction: column;
+
+    }
+
+    /* FINAL HOME */
+}
+
+/*/////////////////////////////*/
+
+/*PARA MOBILE MÉDIO */
+
+@media (max-width: 426px) {
+
+    header {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .logo {
+        flex-direction: row;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .btn-hamburguer {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+
+
+    /*CLASSES RESPONSIVAS */
+    header.responsive {
+        display: block;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    header nav ul.responsive {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    header div.logo.responsive {
+        display: none;
+    }
+
+    /* FINAL CLASSES RESPONSIVAS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION PEDIDOS E CARDS */
+    section#pedidos {
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    section#pedidos div.cards {
+        flex-direction: column;
+    }
+
+    section#pedidos div.cards div.card-item {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    /* FINAL SECTION PEDIDOS E CARDS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION COMO FUNCIONA */
+    section#comoFunciona div.textoCabecalho div.botoes {
+        text-align: center;
+    }
+
+    .parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .parent .texto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parent .cabecalho {
+        flex-direction: column;
+
+    }
+
+    /* FINAL SECTION COMO FUNCIONA */
+
+    /*/////////////////////////////*/
+
+    /* SECTION -  QUEM SOMOS */
+    section#quemSomos div.cardsSomos {
+        flex-direction: column;
+    }
+
+    section#quemSomos div.cardSomos {
+        width: 80%;
+
+    }
+
+    section#quemSomos {
+        width: 90%;
+    }
+
+    /*FINAL SECTION QUEM SOMOS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION -  MÍDIA */
+    .container2 {
+        border-radius: 0;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .item {
+        border-radius: 5px;
+    }
+
+    /* FINAL SECTION MÍDIA */
+
+    /*/////////////////////////////*/
+
+    /* FOOTER */
+    .footer-container {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo p {
+        font-size: 25px;
+    }
+
+    .social-media h2 {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer-info {
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*FINAL FOOTER */
+
+    /*/////////////////////////////*/
+
+    /* HOME - PEDIDOS DISPONIVEIS */
+    div.entregas-disponiveis {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    div.entregas-disponiveis div.texto h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    div.entregas-disponiveis img {
+        display: none;
+    }
+
+    .container-pedido-disponiveis {
+        margin-top: 2rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-pedido {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    div.card{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* FINAL HOME PEDIDOS DISPONÍVEIS */
+
+    /*/////////////////////////////*/
+
+    /* PERFIL */
+    div.container-perfil {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* FINAL PERFIL */
+
+    /*/////////////////////////////*/
+
+
+
+}
+
+
+
+@media (max-width: 431px) {
+
+    header {
+        padding: 1rem;
+        justify-content: space-between;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header .logo {
+        flex-direction: row;
+    }
+
+    header .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header .btn-hamburguer {
+        display: flex;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+
+
+    /*CLASSES RESPONSIVAS */
+    header.responsive {
+        display: block;
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    header nav ul.responsive {
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    header div.logo.responsive {
+        display: none;
+    }
+
+    /* FINAL CLASSES RESPONSIVAS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION PEDIDOS E CARDS */
+    section#pedidos {
+        height: auto;
+        margin-top: 5rem;
+    }
+
+    section#pedidos div.cards {
+        flex-direction: column;
+    }
+
+    section#pedidos div.cards div.card-item {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    /* FINAL SECTION PEDIDOS E CARDS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION COMO FUNCIONA */
+    section#comoFunciona div.textoCabecalho div.botoes {
+        text-align: center;
+    }
+
+    .parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .parent .texto {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .parent .cabecalho {
+        flex-direction: column;
+
+    }
+
+    /* FINAL SECTION COMO FUNCIONA */
+
+    /*/////////////////////////////*/
+
+    /* SECTION -  QUEM SOMOS */
+    section#quemSomos div.cardsSomos {
+        flex-direction: column;
+    }
+
+    section#quemSomos div.cardSomos {
+        width: 80%;
+
+    }
+
+    section#quemSomos {
+        width: 90%;
+    }
+
+    /*FINAL SECTION QUEM SOMOS */
+
+    /*/////////////////////////////*/
+
+    /* SECTION -  MÍDIA */
+    .container2 {
+        border-radius: 0;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .item {
+        border-radius: 5px;
+    }
+
+    /* FINAL SECTION MÍDIA */
+
+    /*/////////////////////////////*/
+
+    /* FOOTER */
+    .footer-container {
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo p {
+        font-size: 25px;
+    }
+
+    .social-media h2 {
+        font-size: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .developer-info {
+        gap: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /*FINAL FOOTER */
+
+    /*/////////////////////////////*/
+
+    /* HOME - PEDIDOS DISPONIVEIS */
+    div.entregas-disponiveis {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    div.entregas-disponiveis div.texto h1 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    div.entregas-disponiveis img {
+        display: none;
+    }
+
+    .container-pedido-disponiveis {
+        flex-direction: column;
+    }
+
+    .card-pedido {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* FINAL HOME PEDIDOS DISPONÍVEIS */
+
+    /*/////////////////////////////*/
+
+    /* PERFIL */
+    div.container-perfil {
+        display: block;
+        align-items: center;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    /* FINAL PERFIL */
+
+    /*/////////////////////////////*/
+
+
+
+}
+

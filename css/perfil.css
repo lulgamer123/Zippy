@@ -1,0 +1,37 @@
+div.container-perfil {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+/* input pra atualizar a foto de perfil */
+input[type="file"] {
+    margin-bottom: 20px;
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+    border-radius: 5px;
+}
+.custom-file-upload:hover {
+    background-color: #45a049;
+}
+
+/* responsividade de merda, tem q arrumar depois */
+
+@media (max-width: 769px) {
+    div.container-perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,106 @@
+
+.container-pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.img-pedidos{
+   width: 40%;
+}
+
+div.meusPedidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: left;
+}
+
+ul.lista-pedidos {
+    list-style-type: none;
+}
+
+li.pedido {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    width: 100%;
+}
+
+li.pedido img {
+    width: 150px;
+    height: 150px;
+}
+
+span#linha{
+    width: 1px;
+    height: 60%;
+    background-color: #ccc;
+    margin: 0 1rem;
+
+}
+
+
+
+
+
+
+
+
+.container-pedido-disponiveis{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    
+}
+
+.img-medium {
+    max-width: 100%;
+    height: auto;
+    width: 200px;
+
+}
+
+div.card{
+    align-items: center;
+    flex-direction: row;
+}
+
+
+#btn-top{
+    background-color: #8C76DB;
+    border: none;
+    outline: none;
+    width: 45px;
+    margin: 20px 20px;
+    float: right;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#origem-autocomplete, #destino-autocomplete {
+    max-height: 100px;
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+
+
+
